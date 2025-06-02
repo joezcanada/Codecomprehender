@@ -1,0 +1,90 @@
+[project]
+name = "java-doc-generator"
+version = "0.1.0"
+description = "A tool for generating Java documentation using Azure OpenAI"
+authors = [
+    {name = "Tong Zhou"}
+]
+dependencies = [
+    "click>=8.1.7",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.5",
+    "antlr4-python3-runtime==4.13.1",  # ANTLR runtime
+    "httpx",
+    "graphviz>=0.20.0",  # For rendering call graphs and AST diagrams
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-mock>=3.10.0",
+    "pytest-cov>=4.0.0",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-mock>=3.10.0",
+    "pytest-cov>=4.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+java-doc = "cli:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--tb=short",
+    "--strict-markers",
+]
+markers = [
+    "integration: Integration tests",
+    "unit: Unit tests",
+    "slow: Slow running tests",
+]
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "*/__pycache__/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]

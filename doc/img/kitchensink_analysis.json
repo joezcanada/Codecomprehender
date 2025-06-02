@@ -1,0 +1,1609 @@
+{
+  "directory": "/Users/tong.zhou/poc/example/kitchensink",
+  "total_files": 13,
+  "total_methods": 45,
+  "total_method_calls": 155,
+  "files": [
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/test/java/org/jboss/as/quickstarts/kitchensink/test/RemoteMemberRegistrationIT.java",
+      "classes": [
+        {
+          "name": "RemoteMemberRegistrationIT",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "getHTTPEndpoint",
+              "return_type": "URI",
+              "parameters": []
+            },
+            {
+              "name": "getServerHost",
+              "return_type": "String",
+              "parameters": []
+            },
+            {
+              "name": "testRegister",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "cleanUp",
+              "return_type": "void",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "log",
+              "type": "Logger"
+            },
+            {
+              "name": "createdId",
+              "type": "BigInteger"
+            }
+          ]
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "getHTTPEndpoint",
+          "called_class": "RemoteMemberRegistrationIT",
+          "called_method": "getServerHost",
+          "line_number": 42
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "getHTTPEndpoint",
+          "called_class": "RemoteMemberRegistrationIT",
+          "called_method": "getServerHost",
+          "line_number": 42
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "getHTTPEndpoint",
+          "called_class": "java.net.URI",
+          "called_method": "<constructor>",
+          "line_number": 47
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "getHTTPEndpoint",
+          "called_class": "RuntimeException",
+          "called_method": "<constructor>",
+          "line_number": 49
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "getServerHost",
+          "called_class": "System",
+          "called_method": "getenv",
+          "line_number": 54
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "getServerHost",
+          "called_class": "System",
+          "called_method": "getProperty",
+          "line_number": 56
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "org.jboss.as.quickstarts.kitchensink.model.Member",
+          "called_method": "<constructor>",
+          "line_number": 63
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "setName",
+          "line_number": 64
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "setEmail",
+          "line_number": 65
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "setPhoneNumber",
+          "line_number": 66
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "jakarta.json.Json",
+          "called_method": "createObjectBuilder",
+          "line_number": 67
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Json.createObjectBuilder()",
+          "called_method": "add",
+          "line_number": 68
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Json.createObjectBuilder().add(\"name\",\"Jane Doe\")",
+          "called_method": "add",
+          "line_number": 69
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Json.createObjectBuilder().add(\"name\",\"Jane Doe\").add(\"email\",\"jane@mailinator.com\")",
+          "called_method": "add",
+          "line_number": 70
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Json.createObjectBuilder().add(\"name\",\"Jane Doe\").add(\"email\",\"jane@mailinator.com\").add(\"phoneNumber\",\"2125551234\")",
+          "called_method": "build",
+          "line_number": 70
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "java.net.http.HttpRequest",
+          "called_method": "newBuilder",
+          "line_number": 71
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "RemoteMemberRegistrationIT",
+          "called_method": "getHTTPEndpoint",
+          "line_number": 71
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "RemoteMemberRegistrationIT",
+          "called_method": "getHTTPEndpoint",
+          "line_number": 71
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpRequest.newBuilder(getHTTPEndpoint())",
+          "called_method": "header",
+          "line_number": 72
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpRequest.newBuilder(getHTTPEndpoint()).header(\"Content-Type\",\"application/json\")",
+          "called_method": "POST",
+          "line_number": 73
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpRequest.BodyPublishers",
+          "called_method": "ofString",
+          "line_number": 73
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "JsonObject",
+          "called_method": "toString",
+          "line_number": 73
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpRequest.newBuilder(getHTTPEndpoint()).header(\"Content-Type\",\"application/json\").POST(HttpRequest.BodyPublishers.ofString(json.toString()))",
+          "called_method": "build",
+          "line_number": 74
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "java.net.http.HttpClient",
+          "called_method": "newHttpClient",
+          "line_number": 75
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpClient.newHttpClient()",
+          "called_method": "send",
+          "line_number": 75
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpResponse.BodyHandlers",
+          "called_method": "ofString",
+          "line_number": 75
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "org.junit.Assert",
+          "called_method": "assertEquals",
+          "line_number": 76
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpResponse",
+          "called_method": "statusCode",
+          "line_number": 76
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "org.json.JSONObject",
+          "called_method": "<constructor>",
+          "line_number": 77
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "HttpResponse",
+          "called_method": "body",
+          "line_number": 77
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "response.body()",
+          "called_method": "toString",
+          "line_number": 77
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Logger",
+          "called_method": "info",
+          "line_number": 78
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "java.math.BigInteger",
+          "called_method": "<constructor>",
+          "line_number": 79
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "JSONObject",
+          "called_method": "getString",
+          "line_number": 79
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "Logger",
+          "called_method": "info",
+          "line_number": 85
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "java.net.http.HttpRequest",
+          "called_method": "newBuilder",
+          "line_number": 86
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "RemoteMemberRegistrationIT",
+          "called_method": "getHTTPEndpoint",
+          "line_number": 86
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "RemoteMemberRegistrationIT",
+          "called_method": "getHTTPEndpoint",
+          "line_number": 86
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "getHTTPEndpoint()",
+          "called_method": "resolve",
+          "line_number": 86
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "HttpRequest.newBuilder(getHTTPEndpoint().resolve(\"/api/members/\"+createdId))",
+          "called_method": "header",
+          "line_number": 87
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "HttpRequest.newBuilder(getHTTPEndpoint().resolve(\"/api/members/\"+createdId)).header(\"Content-Type\",\"application/json\")",
+          "called_method": "DELETE",
+          "line_number": 88
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "HttpRequest.newBuilder(getHTTPEndpoint().resolve(\"/api/members/\"+createdId)).header(\"Content-Type\",\"application/json\").DELETE()",
+          "called_method": "build",
+          "line_number": 89
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "java.net.http.HttpClient",
+          "called_method": "newHttpClient",
+          "line_number": 90
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "HttpClient.newHttpClient()",
+          "called_method": "send",
+          "line_number": 90
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "HttpResponse.BodyHandlers",
+          "called_method": "ofString",
+          "line_number": 90
+        },
+        {
+          "caller_class": "RemoteMemberRegistrationIT",
+          "caller_method": "cleanUp",
+          "called_class": "Logger",
+          "called_method": "info",
+          "line_number": 91
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/test/java/org/jboss/as/quickstarts/kitchensink/test/MemberRegistrationIT.java",
+      "classes": [
+        {
+          "name": "MemberRegistrationIT",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "testRegister",
+              "return_type": "void",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "memberRegistration",
+              "type": "MemberRegistration"
+            },
+            {
+              "name": "log",
+              "type": "Logger"
+            }
+          ]
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "org.jboss.as.quickstarts.kitchensink.model.Member",
+          "called_method": "<constructor>",
+          "line_number": 47
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "setName",
+          "line_number": 48
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "setEmail",
+          "line_number": 49
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "setPhoneNumber",
+          "line_number": 50
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "MemberRegistration",
+          "called_method": "register",
+          "line_number": 52
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "assertNotNull(newMember",
+          "called_method": "getId",
+          "line_number": 53
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "MemberRegistrationIT",
+          "called_method": "assertNotNull",
+          "line_number": 53
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "getId",
+          "line_number": 53
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Logger",
+          "called_method": "info",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "getName",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "Member",
+          "called_method": "getId",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "fail(e",
+          "called_method": "getMessage",
+          "line_number": 56
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "MemberRegistrationIT",
+          "called_method": "fail",
+          "line_number": 56
+        },
+        {
+          "caller_class": "MemberRegistrationIT",
+          "caller_method": "testRegister",
+          "called_class": "e",
+          "called_method": "getMessage",
+          "line_number": 56
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/test/java/org/jboss/as/quickstarts/kitchensink/test/config/MongoDBConfig.java",
+      "classes": [
+        {
+          "name": "MongoDBConfig",
+          "extends": null,
+          "implements": [],
+          "methods": [],
+          "fields": [
+            {
+              "name": "mongoDBContainer",
+              "type": "MongoDBContainer"
+            }
+          ]
+        }
+      ],
+      "method_calls": []
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/Main.java",
+      "classes": [
+        {
+          "name": "Main",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "main",
+              "return_type": "void",
+              "parameters": []
+            }
+          ],
+          "fields": []
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "Main",
+          "caller_method": "main",
+          "called_class": "org.springframework.boot.SpringApplication",
+          "called_method": "run",
+          "line_number": 19
+        },
+        {
+          "caller_class": "Main",
+          "caller_method": "main",
+          "called_class": "org.slf4j.LoggerFactory",
+          "called_method": "getLogger",
+          "line_number": 21
+        },
+        {
+          "caller_class": "Main",
+          "caller_method": "main",
+          "called_class": "LoggerFactory.getLogger(Main.class)",
+          "called_method": "error",
+          "line_number": 21
+        },
+        {
+          "caller_class": "Main",
+          "caller_method": "main",
+          "called_class": "e",
+          "called_method": "getStackTrace",
+          "line_number": 21
+        },
+        {
+          "caller_class": "Main",
+          "caller_method": "main",
+          "called_class": "e.getStackTrace()",
+          "called_method": "toString",
+          "line_number": 21
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/config/ApplicationConfiguration.java",
+      "classes": [
+        {
+          "name": "ApplicationConfiguration",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "ApplicationConfiguration",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "onApplicationEvent",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "validatingMongoEventListener",
+              "return_type": "ValidatingMongoEventListener",
+              "parameters": []
+            },
+            {
+              "name": "validator",
+              "return_type": "LocalValidatorFactoryBean",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "mongoOperations",
+              "type": "MongoOperations"
+            }
+          ]
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "ApplicationConfiguration",
+          "caller_method": "onApplicationEvent",
+          "called_class": "MongoOperations",
+          "called_method": "collectionExists",
+          "line_number": 26
+        },
+        {
+          "caller_class": "ApplicationConfiguration",
+          "caller_method": "onApplicationEvent",
+          "called_class": "MongoOperations",
+          "called_method": "createCollection",
+          "line_number": 27
+        },
+        {
+          "caller_class": "ApplicationConfiguration",
+          "caller_method": "onApplicationEvent",
+          "called_class": "MongoOperations",
+          "called_method": "collectionExists",
+          "line_number": 29
+        },
+        {
+          "caller_class": "ApplicationConfiguration",
+          "caller_method": "onApplicationEvent",
+          "called_class": "MongoOperations",
+          "called_method": "createCollection",
+          "line_number": 30
+        },
+        {
+          "caller_class": "ApplicationConfiguration",
+          "caller_method": "validatingMongoEventListener",
+          "called_class": "org.springframework.data.mongodb.core.mapping.event.ValidatingMongoEventListener",
+          "called_method": "<constructor>",
+          "line_number": 36
+        },
+        {
+          "caller_class": "ApplicationConfiguration",
+          "caller_method": "validator",
+          "called_class": "org.springframework.validation.beanvalidation.LocalValidatorFactoryBean",
+          "called_method": "<constructor>",
+          "line_number": 41
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/utils/Resources.java",
+      "classes": [
+        {
+          "name": "Resources",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "produceLogger",
+              "return_type": "Logger",
+              "parameters": []
+            }
+          ],
+          "fields": []
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "Resources",
+          "caller_method": "produceLogger",
+          "called_class": "injectionPoint",
+          "called_method": "getMember",
+          "line_number": 16
+        },
+        {
+          "caller_class": "Resources",
+          "caller_method": "produceLogger",
+          "called_class": "injectionPoint.getMember()",
+          "called_method": "getDeclaringClass",
+          "line_number": 16
+        },
+        {
+          "caller_class": "Resources",
+          "caller_method": "produceLogger",
+          "called_class": "java.util.logging.Logger",
+          "called_method": "getLogger",
+          "line_number": 17
+        },
+        {
+          "caller_class": "Resources",
+          "caller_method": "produceLogger",
+          "called_class": "Class",
+          "called_method": "getName",
+          "line_number": 17
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java",
+      "classes": [
+        {
+          "name": "MemberController",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "MemberController",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "refresh",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "register",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "getRootErrorMessage",
+              "return_type": "String",
+              "parameters": []
+            },
+            {
+              "name": "getMembers",
+              "return_type": "List<Member>",
+              "parameters": []
+            },
+            {
+              "name": "setMembers",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "getNewMember",
+              "return_type": "Member",
+              "parameters": []
+            },
+            {
+              "name": "setNewMember",
+              "return_type": "void",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "memberRegistration",
+              "type": "MemberRegistration"
+            },
+            {
+              "name": "memberListProducer",
+              "type": "MemberListProducer"
+            },
+            {
+              "name": "newMember",
+              "type": "Member"
+            },
+            {
+              "name": "members",
+              "type": "List"
+            }
+          ]
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "MemberController",
+          "caller_method": "refresh",
+          "called_class": "org.jboss.as.quickstarts.kitchensink.model.Member",
+          "called_method": "<constructor>",
+          "line_number": 47
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "refresh",
+          "called_class": "MemberListProducer",
+          "called_method": "retrieveAllMembersOrderedByName",
+          "line_number": 48
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "refresh",
+          "called_class": "MemberListProducer",
+          "called_method": "getMembers",
+          "line_number": 49
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "jakarta.faces.context.FacesContext",
+          "called_method": "getCurrentInstance",
+          "line_number": 53
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "Member",
+          "called_method": "getName",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "newMember.getName()",
+          "called_method": "isEmpty",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "Member",
+          "called_method": "getEmail",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "newMember.getEmail()",
+          "called_method": "isEmpty",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "Member",
+          "called_method": "getPhoneNumber",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "newMember.getPhoneNumber()",
+          "called_method": "isEmpty",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "FacesContext",
+          "called_method": "addMessage",
+          "line_number": 55
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "jakarta.faces.application.FacesMessage",
+          "called_method": "<constructor>",
+          "line_number": 55
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "MemberRegistration",
+          "called_method": "register",
+          "line_number": 58
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "jakarta.faces.application.FacesMessage",
+          "called_method": "<constructor>",
+          "line_number": 59
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "FacesContext",
+          "called_method": "addMessage",
+          "line_number": 60
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "MemberController",
+          "called_method": "refresh",
+          "line_number": 61
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "MemberController",
+          "called_method": "refresh",
+          "line_number": 61
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "MemberController",
+          "called_method": "getRootErrorMessage",
+          "line_number": 63
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "MemberController",
+          "called_method": "getRootErrorMessage",
+          "line_number": 63
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "jakarta.faces.application.FacesMessage",
+          "called_method": "<constructor>",
+          "line_number": 64
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "register",
+          "called_class": "FacesContext",
+          "called_method": "addMessage",
+          "line_number": 65
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "getRootErrorMessage",
+          "called_class": "Throwable",
+          "called_method": "getLocalizedMessage",
+          "line_number": 77
+        },
+        {
+          "caller_class": "MemberController",
+          "caller_method": "getRootErrorMessage",
+          "called_class": "Throwable",
+          "called_method": "getCause",
+          "line_number": 78
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/model/Member.java",
+      "classes": [
+        {
+          "name": "Member",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "getId",
+              "return_type": "BigInteger",
+              "parameters": []
+            },
+            {
+              "name": "setId",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "getEmail",
+              "return_type": "String",
+              "parameters": []
+            },
+            {
+              "name": "setEmail",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "getName",
+              "return_type": "String",
+              "parameters": []
+            },
+            {
+              "name": "setName",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "getPhoneNumber",
+              "return_type": "String",
+              "parameters": []
+            },
+            {
+              "name": "setPhoneNumber",
+              "return_type": "void",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "SEQUENCE_NAME",
+              "type": "String"
+            },
+            {
+              "name": "id",
+              "type": "BigInteger"
+            },
+            {
+              "name": "email",
+              "type": "String"
+            },
+            {
+              "name": "name",
+              "type": "String"
+            },
+            {
+              "name": "phoneNumber",
+              "type": "String"
+            }
+          ]
+        }
+      ],
+      "method_calls": []
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/model/DatabaseSequence.java",
+      "classes": [
+        {
+          "name": "DatabaseSequence",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "getId",
+              "return_type": "String",
+              "parameters": []
+            },
+            {
+              "name": "setId",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "getSequence",
+              "return_type": "BigInteger",
+              "parameters": []
+            },
+            {
+              "name": "setSequence",
+              "return_type": "void",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "id",
+              "type": "String"
+            },
+            {
+              "name": "sequence",
+              "type": "BigInteger"
+            }
+          ]
+        }
+      ],
+      "method_calls": []
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/service/MemberRegistration.java",
+      "classes": [
+        {
+          "name": "MemberRegistration",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "MemberRegistration",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "register",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "generateSequence",
+              "return_type": "BigInteger",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "log",
+              "type": "Logger"
+            },
+            {
+              "name": "mongoOperations",
+              "type": "MongoOperations"
+            },
+            {
+              "name": "memberRepository",
+              "type": "MemberRepository"
+            }
+          ]
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "MemberRegistration",
+          "called_class": "java.util.logging.Logger",
+          "called_method": "getLogger",
+          "line_number": 46
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "MemberRegistration",
+          "called_class": "MemberRegistration",
+          "called_method": "getClass",
+          "line_number": 46
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "MemberRegistration",
+          "called_class": "MemberRegistration",
+          "called_method": "getClass",
+          "line_number": 46
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "MemberRegistration",
+          "called_class": "getClass()",
+          "called_method": "getName",
+          "line_number": 46
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "register",
+          "called_class": "member",
+          "called_method": "setId",
+          "line_number": 52
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "register",
+          "called_class": "generateSequence(Member",
+          "called_method": "SEQUENCE_NAME)",
+          "line_number": 52
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "register",
+          "called_class": "MemberRegistration",
+          "called_method": "generateSequence",
+          "line_number": 52
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "register",
+          "called_class": "MemberRepository",
+          "called_method": "insert",
+          "line_number": 54
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "register",
+          "called_class": "Exception",
+          "called_method": "<constructor>",
+          "line_number": 56
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "register",
+          "called_class": "e",
+          "called_method": "getLocalizedMessage",
+          "line_number": 56
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "MongoOperations",
+          "called_method": "findAndModify",
+          "line_number": 62
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "org.springframework.data.mongodb.core.query.Query",
+          "called_method": "query",
+          "line_number": 63
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "org.springframework.data.mongodb.core.query.Criteria",
+          "called_method": "where",
+          "line_number": 63
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "Criteria.where(\"_id\")",
+          "called_method": "is",
+          "line_number": 63
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "org.springframework.data.mongodb.core.query.Update",
+          "called_method": "<constructor>",
+          "line_number": 64
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "newUpdate()",
+          "called_method": "inc",
+          "line_number": 64
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "org.springframework.data.mongodb.core.FindAndModifyOptions",
+          "called_method": "options",
+          "line_number": 65
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "FindAndModifyOptions.options()",
+          "called_method": "returnNew",
+          "line_number": 65
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "FindAndModifyOptions.options().returnNew(true)",
+          "called_method": "upsert",
+          "line_number": 65
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "java.util.Objects",
+          "called_method": "isNull",
+          "line_number": 68
+        },
+        {
+          "caller_class": "MemberRegistration",
+          "caller_method": "generateSequence",
+          "called_class": "DatabaseSequence",
+          "called_method": "getSequence",
+          "line_number": 68
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberListProducer.java",
+      "classes": [
+        {
+          "name": "MemberListProducer",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "MemberListProducer",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "getMembers",
+              "return_type": "List<Member>",
+              "parameters": []
+            },
+            {
+              "name": "onMemberListChanged",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "retrieveAllMembersOrderedByName",
+              "return_type": "void",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "memberRepository",
+              "type": "MemberRepository"
+            },
+            {
+              "name": "members",
+              "type": "List"
+            }
+          ]
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "MemberListProducer",
+          "caller_method": "onMemberListChanged",
+          "called_class": "MemberListProducer",
+          "called_method": "retrieveAllMembersOrderedByName",
+          "line_number": 44
+        },
+        {
+          "caller_class": "MemberListProducer",
+          "caller_method": "onMemberListChanged",
+          "called_class": "MemberListProducer",
+          "called_method": "retrieveAllMembersOrderedByName",
+          "line_number": 44
+        },
+        {
+          "caller_class": "MemberListProducer",
+          "caller_method": "retrieveAllMembersOrderedByName",
+          "called_class": "MemberRepository",
+          "called_method": "findAllByOrderByNameAsc",
+          "line_number": 49
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberRepository.java",
+      "classes": [],
+      "method_calls": []
+    },
+    {
+      "file_path": "/Users/tong.zhou/poc/example/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/rest/MemberResourceRESTService.java",
+      "classes": [
+        {
+          "name": "MemberResourceRESTService",
+          "extends": null,
+          "implements": [],
+          "methods": [
+            {
+              "name": "MemberResourceRESTService",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "listAllMembers",
+              "return_type": "List<Member>",
+              "parameters": []
+            },
+            {
+              "name": "lookupMemberById",
+              "return_type": "Member",
+              "parameters": []
+            },
+            {
+              "name": "deleteMemberById",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "createMember",
+              "return_type": "Member",
+              "parameters": []
+            },
+            {
+              "name": "validateMember",
+              "return_type": "void",
+              "parameters": []
+            },
+            {
+              "name": "emailAlreadyExists",
+              "return_type": "boolean",
+              "parameters": []
+            }
+          ],
+          "fields": [
+            {
+              "name": "log",
+              "type": "Logger"
+            },
+            {
+              "name": "repository",
+              "type": "MemberRepository"
+            },
+            {
+              "name": "registration",
+              "type": "MemberRegistration"
+            }
+          ]
+        }
+      ],
+      "method_calls": [
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "listAllMembers",
+          "called_class": "MemberRepository",
+          "called_method": "findAll",
+          "line_number": 61
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "lookupMemberById",
+          "called_class": "MemberRepository",
+          "called_method": "findById",
+          "line_number": 67
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "lookupMemberById",
+          "called_class": "java.math.BigInteger",
+          "called_method": "valueOf",
+          "line_number": 67
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "lookupMemberById",
+          "called_class": "org.springframework.web.server.ResponseStatusException",
+          "called_method": "<constructor>",
+          "line_number": 69
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "lookupMemberById",
+          "called_class": "Logger",
+          "called_method": "throwing",
+          "line_number": 70
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "lookupMemberById",
+          "called_class": "MemberResourceRESTService.class",
+          "called_method": "getName",
+          "line_number": 70
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "deleteMemberById",
+          "called_class": "MemberRepository",
+          "called_method": "findById",
+          "line_number": 78
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "deleteMemberById",
+          "called_class": "java.math.BigInteger",
+          "called_method": "valueOf",
+          "line_number": 78
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "deleteMemberById",
+          "called_class": "org.springframework.web.server.ResponseStatusException",
+          "called_method": "<constructor>",
+          "line_number": 80
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "deleteMemberById",
+          "called_class": "Logger",
+          "called_method": "throwing",
+          "line_number": 81
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "deleteMemberById",
+          "called_class": "MemberResourceRESTService.class",
+          "called_method": "getName",
+          "line_number": 81
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "deleteMemberById",
+          "called_class": "MemberRepository",
+          "called_method": "deleteMemberById",
+          "line_number": 84
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "deleteMemberById",
+          "called_class": "java.math.BigInteger",
+          "called_method": "valueOf",
+          "line_number": 84
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "MemberResourceRESTService",
+          "called_method": "validateMember",
+          "line_number": 96
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "MemberResourceRESTService",
+          "called_method": "validateMember",
+          "line_number": 96
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "MemberRegistration",
+          "called_method": "register",
+          "line_number": 97
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "org.springframework.web.server.ResponseStatusException",
+          "called_method": "<constructor>",
+          "line_number": 99
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "Logger",
+          "called_method": "throwing",
+          "line_number": 100
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "this",
+          "called_method": "getClass",
+          "line_number": 100
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "this.getClass()",
+          "called_method": "getName",
+          "line_number": 100
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "org.springframework.web.server.ResponseStatusException",
+          "called_method": "<constructor>",
+          "line_number": 103
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "e",
+          "called_method": "getMessage",
+          "line_number": 103
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "Logger",
+          "called_method": "throwing",
+          "line_number": 104
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "this",
+          "called_method": "getClass",
+          "line_number": 104
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "createMember",
+          "called_class": "this.getClass()",
+          "called_method": "getName",
+          "line_number": 104
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "validateMember",
+          "called_class": "member",
+          "called_method": "getEmail",
+          "line_number": 120
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "validateMember",
+          "called_class": "MemberResourceRESTService",
+          "called_method": "emailAlreadyExists",
+          "line_number": 121
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "validateMember",
+          "called_class": "MemberResourceRESTService",
+          "called_method": "emailAlreadyExists",
+          "line_number": 121
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "validateMember",
+          "called_class": "jakarta.validation.ValidationException",
+          "called_method": "<constructor>",
+          "line_number": 122
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "validateMember",
+          "called_class": "Logger",
+          "called_method": "throwing",
+          "line_number": 123
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "validateMember",
+          "called_class": "this",
+          "called_method": "getClass",
+          "line_number": 123
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "validateMember",
+          "called_class": "this.getClass()",
+          "called_method": "getName",
+          "line_number": 123
+        },
+        {
+          "caller_class": "MemberResourceRESTService",
+          "caller_method": "emailAlreadyExists",
+          "called_class": "MemberRepository",
+          "called_method": "findByEmail",
+          "line_number": 137
+        }
+      ]
+    }
+  ]
+}
