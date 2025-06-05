@@ -78,8 +78,7 @@ def _insert_documentation_at_position(
     indent_spaces = (
         _calculate_indent(lines[insertion_line]) if insertion_line < len(lines) else 0
     )
-    javadoc = _format_javadoc(doc_text, indent_spaces)
-    javadoc_lines = javadoc.split("\n")
+    javadoc_lines = _format_javadoc_lines(doc_text, indent_spaces)
 
     if insertion_line > 0 and lines[insertion_line - 1].strip():
         javadoc_lines.insert(0, "")
@@ -125,9 +124,9 @@ def _calculate_indent(line: str) -> int:
     return len(line) - len(line.lstrip()) if line.strip() else 0
 
 
-def _format_javadoc(comment: str, indent_spaces: int = 0) -> str:
+def _format_javadoc_lines(comment: str, indent_spaces: int = 0) -> List[str]:
     if not comment or not comment.strip():
-        return ""
+        return []
 
     indent = " " * indent_spaces
     content = comment.strip()
@@ -147,4 +146,4 @@ def _format_javadoc(comment: str, indent_spaces: int = 0) -> str:
         result.append(f"{indent} * {line}")
     result.append(f"{indent} */")
 
-    return "\n".join(result)
+    return result
